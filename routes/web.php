@@ -56,7 +56,7 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 });
 
-Route::get('/buy', function (Request $request) {
+Route::get('buy', function (Request $request) {
     $checkout = $request->user()->checkout('224610');
 
     return view('billing', ['checkout' => $checkout]);

@@ -12,11 +12,11 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
+    use Billable;
     use HasApiTokens;
     use HasFactory;
     use HasRoles;
     use Notifiable;
-    use Billable;
 
     /**
      * The attributes that are mass assignable.
@@ -52,5 +52,4 @@ class User extends Authenticatable
     {
         return true;
     }
-
 }
