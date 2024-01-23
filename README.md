@@ -11,7 +11,7 @@
 - [Alpine.js](https://alpinejs.dev)
 - [Laravel](https://laravel.com)
 - [Laravel Livewire](https://livewire.laravel.com)
-
+- [Lemon squeezy for laravel](https://github.com/lmsqueezy/laravel)
 
 ## Further it includes:
 

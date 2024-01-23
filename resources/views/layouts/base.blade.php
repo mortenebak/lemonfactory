@@ -34,6 +34,7 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        @lemonJS
     </head>
 
     <body class="flex flex-col min-h-screen">
