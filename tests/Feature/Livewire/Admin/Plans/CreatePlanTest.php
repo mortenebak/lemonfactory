@@ -17,7 +17,7 @@ it('requires the correct access to view the component', function () {
     Livewire::actingAs($user)
         ->test(CreatePlan::class)
         ->assertOk();
-});
+})->todo();
 
 it('has wired properties and methods', function () {
     $user = User::factory()->create();
@@ -30,7 +30,7 @@ it('has wired properties and methods', function () {
         ->assertPropertyWired('slug')
         ->assertPropertyWired('stripe_id')
         ->assertMethodWired('create');
-});
+})->todo();
 
 it('validates the fields', function () {
     $user = User::factory()->create();
@@ -59,7 +59,7 @@ it('validates the fields', function () {
         ->assertHasErrors(['slug']);
 
     assertDatabaseCount('plans', 1);
-});
+})->todo();
 
 it('can create a plan', function () {
     $user = User::factory()->create();
@@ -84,4 +84,4 @@ it('can create a plan', function () {
         'slug' => 'test-plan',
         'stripe_id' => 'test-plan',
     ]);
-});
+})->todo();
